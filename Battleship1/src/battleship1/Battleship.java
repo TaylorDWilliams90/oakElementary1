@@ -46,7 +46,10 @@ public class Battleship {
         ships.displayShips();
         
         MainMenuView mainMenu = new MainMenuView();
-        mainMenu.getInput();      
+        mainMenu.getInput();
+        
+        GamePreferencesMenuView gamePreferencesMenu = new GamePreferencesMenuView();
+        mainMenu.getInput();
         
     }
     public void getName() {
