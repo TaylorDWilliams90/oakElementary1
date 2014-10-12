@@ -21,7 +21,7 @@ public class OakElementary {
         Player playerOne = new Player();
         
         playerOne.setName("Taylor Williams");
-        playerOne.setBestTime(9.50);
+        playerOne.setBestScore(9.50);
         
         String playerInfo = playerOne.toString();
         System.out.println(playerInfo);
