@@ -72,6 +72,35 @@ public class OakElementary {
         String homeRoomInfo = homeRoom.toString();
         System.out.println(homeRoomInfo);
         
+        //Cafeteria.java
+        
+        Cafeteria cafeteriaOne = new Cafeteria();
+        
+        cafeteriaOne.setDrink("Milk");
+        cafeteriaOne.setPie("Apple");
+        cafeteriaOne.setMakeRoom("Jumping Jacks");
+        
+        String cafeteriaOneInfo = cafeteriaOne.toString();
+        System.out.println(cafeteriaOneInfo);
+        
+        //FootballField
+        
+        FootballField footballOne = new FootballField();
+        
+        footballOne.setOffensePlays("Run the Ball");
+        footballOne.setDefensePlays("Defend the Run");
+        
+        String footballInfo = footballOne.toString();
+        System.out.println(footballInfo);
+        
+        //HeadsOrTails
+        
+        HeadsOrTails headsortailsOne = new HeadsOrTails();
+        
+        headsortailsOne.setOutcome("Heads");
+        
+        String headsortailsInfo = headsortailsOne.toString();
+        System.out.println(headsortailsInfo);
         
         // Map
         
@@ -85,6 +114,15 @@ public class OakElementary {
         String mapInfo = map.toString();
         System.out.println(mapInfo);
         
+        // Locations    
+        
+        Locations locations = new Locations();
+        
+        locations.setColumns(4);
+        locations.setRows(3);
+        
+        String locationsInfo = locations.toString();
+        System.out.println(locationsInfo);
         
              
     }
