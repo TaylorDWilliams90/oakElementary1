@@ -7,7 +7,6 @@
 package byui.cit260.oakElementay.control;
 
 import byui.cit260.oakElementary.model.Player;
-import java.lang;
 
 /**
  *
@@ -15,7 +14,7 @@ import java.lang;
  */
 public class ProgramControl {
 
-    public static Player createPlayer(lang.String playersName) {
+    public static Player createPlayer(String playersName) {
         
     }
     
