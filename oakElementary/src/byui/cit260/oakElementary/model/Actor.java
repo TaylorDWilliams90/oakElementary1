@@ -5,71 +5,34 @@
  */
 package byui.cit260.oakElementary.model;
 
+import java.awt.Point;
 import java.io.Serializable;
-import java.util.Objects;
+
 
 /**
  *
  * @author Kory
  */
-public class Actor implements Serializable {
-    
-    private String name;
-    private String description;
+public enum Actor implements Serializable {
+    PrincipalBills("He is over Oak Elementray and will be in the class room at all times"),
+    TeacherJackson("He is watching over all of the kids in the game"),
+    TheNerd("He is in the playground asking the questions"),
+    TheJock("He is the one on the football faild at all times"),
+    Todd("He is always playing chance games like heads or tails"),
+    Ceasar("He is always on the monkey bars.");
 
-    public Actor() {
-    }
-    
+    private final String description;
+    private final Point coordinates;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    Actor(String description) {
+        this.description = description;
+        coordinates = new Point(1,1);
     }
 
     public String getDescription() {
         return description;
     }
-
-    public void setDescription(String description) {
-        this.description = description;
+    public Point getcoordinates() {
+        return coordinates;
     }
-
-    @Override
-    public String toString() {
-        return "Actor{" + "name=" + name + ", description=" + description + '}';
-    }
-
-    @Override
-    public int hashCode() {
-        int hash = 3;
-        hash = 37 * hash + Objects.hashCode(this.name);
-        hash = 37 * hash + Objects.hashCode(this.description);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Actor other = (Actor) obj;
-        if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
-        if (!Objects.equals(this.description, other.description)) {
-            return false;
-        }
-        return true;
-    }
-    
-    
-    
-    
-    
 }
