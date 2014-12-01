@@ -24,8 +24,24 @@ public class MainMenuView extends View {
                 + "\n---------------------------------------");
         
     }
-    
-    
+    public void doAction(char choice) {
+        case 'N':
+            this.startNewGame();
+            break;
+        case 'G':
+            this.startExistingGame();
+            break;
+        case 'H':
+            this.displayHelpMenu();
+            break;
+        case 'S':
+            this.saveGame();
+            break;
+        case 'E':
+            return;
+        default:
+            System.out.println("\n*** Invaild selection *** Try again");
+    }
 }
     
 
